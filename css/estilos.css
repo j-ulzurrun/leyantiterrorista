@@ -1,13 +1,31 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700|Arvo:400,400italic,700,700italic);
 
 /*CONTENEDORES*/
+header {
+	background-color: #000;
+	background-image: url(../img/encapuchado.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 640px;
+}
+
+nav {
+	height: 100px;
+	background-color: #000;
+	width: 100%
+}
+
+.ancla {
+	margin-top: auto !important;
+}
+
 .linea-h1p {
 	height: 2px;
-	width: 56%;
+	width: 54%;
 	margin: auto;
 	background-color: #fff;
 	background-image: url(http://www.wikinoticia.com/images/monkeyzen/monkeyzen.com.wp-content.uploads.2009.09.ruido-blanco.jpg);
-	box-shadow: 1px 1px rgba(0,0,0,0.4);
+	box-shadow: 2px 2px rgba(0,0,0,0.4);
 }
 
 .linea-h1g {
@@ -16,7 +34,7 @@
 	margin: auto;
 	background-color: #fff;
 	background-image: url(http://www.wikinoticia.com/images/monkeyzen/monkeyzen.com.wp-content.uploads.2009.09.ruido-blanco.jpg);
-	box-shadow: 1px 1px rgba(0,0,0,0.4);
+	box-shadow: 2px 2px rgba(0,0,0,0.4);
 }
 
 /*TIPOGRAFÍAS*/
@@ -26,7 +44,9 @@ h1 {
 	text-align: center;
 	font-size: 80px;
 	color: #fff;
-	text-shadow:1px 1px rgba(0,0,0,0.4);
+	text-shadow:2px 2px rgba(0,0,0,0.4);
+	margin-top: 1px !important;
+	margin-bottom: 1px !important;
 }
 
 h2 {
@@ -36,12 +56,52 @@ h2 {
 	font-size: 60px;
 }
 
+header h2 {
+	color:#fff;
+	text-shadow:2px 2px rgba(0,0,0,0.4);
+	padding-top: 100px;
+}
+
+header p {
+	font-family: Arvo;
+	font-weight: 400;
+	font-size: 22px;
+	text-align: center;
+	text-shadow: 1px 2px rgba(0,0,0,0.4);
+	color: #fff;
+	line-height: 150%;
+	margin-top: 80px;
+}
+
+header p span {
+	color: #D80000;
+	font-weight: 700;
+}
+
 h3 {
 	font-family: Arvo;
 	font-weight: 700;
-	letter-spacing: 0.05em;
+	letter-spacing: 160%;
 	font-size: 22px;
 	text-shadow:1px 1px rgba(0,0,0,0.4);
+}
+
+li {
+	list-style: none outside none;
+}
+
+nav li a {
+	text-decoration: none !important;
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 400 !important;
+	color: #fff;
+}
+
+nav li a:hover {
+	font-weight: 700 !important;
+	color: #fff !important;
+	font-size: 20px;
 }
 
 p {
@@ -49,7 +109,7 @@ p {
 }
 
 a{
-
+	text-decoration: none;
 }
 
 span {
