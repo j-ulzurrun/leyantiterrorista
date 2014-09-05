@@ -1,18 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700|Arvo:400,400italic,700,700italic);
 
-/*CONTENEDORES*/
-header {
-	background-color: #000;
+/*------------------------------------------------------------------CONTENEDORES*/
+body {
 	background-image: url(../img/encapuchado.jpg);
+	background-color: #000;	
 	background-repeat: no-repeat;
 	background-position: top right;
-	height: 640px;
 }
 
 nav {
-	height: 100px;
+	float:top;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: #000;
-	width: 100%
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	border: 0;
 }
 
 .ancla {
@@ -25,7 +31,7 @@ nav {
 	margin: auto;
 	background-color: #fff;
 	background-image: url(http://www.wikinoticia.com/images/monkeyzen/monkeyzen.com.wp-content.uploads.2009.09.ruido-blanco.jpg);
-	box-shadow: 2px 2px rgba(0,0,0,0.4);
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.9);
 }
 
 .linea-h1g {
@@ -34,17 +40,104 @@ nav {
 	margin: auto;
 	background-color: #fff;
 	background-image: url(http://www.wikinoticia.com/images/monkeyzen/monkeyzen.com.wp-content.uploads.2009.09.ruido-blanco.jpg);
-	box-shadow: 2px 2px rgba(0,0,0,0.4);
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.9);
 }
 
-/*TIPOGRAFÍAS*/
+.titulosh2 {
+	padding-bottom: 50px;
+}
+
+.titulosh2c {
+	padding-bottom: 30px;
+}
+
+.titulosh3 {
+	padding-bottom: 10px;
+	padding-left: 7px;
+}
+
+.hitos {
+	padding-bottom: 50px;
+}
+
+.hitos-text {
+	padding-top: 30px;
+}
+
+.historia {
+	background-color: #B20000;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.conducta {
+	background-color: #000;
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+
+.mitades {
+	position: relative;
+}
+
+.pmitadgris {
+	background-color: #71897D;
+	height: 80px;
+	width: 50%;
+	float: left;
+}
+
+.pmitadroja {
+	background-color: #B20000;
+	height: 80px;
+	width: 50%;
+	float: right;
+}
+
+.tituloconflicto {
+	background-color: #000;
+	padding-top: 30px;
+}
+
+.conflicto {
+	background-color: #71897D;
+}
+
+.favor {
+	background-color: #71897D;
+	width: 50%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.contra {
+	background-color: #B20000;
+	width: 50%;
+	float: right;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.opinion {
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+
+/*--------------------------------------------------TIPOGRAFÍAS*/
+/*--------------------------------------------------TIPOGRAFÍAS*/
+/*--------------------------------------------------TIPOGRAFÍAS*/
+/*--------------------------------------------------TIPOGRAFÍAS*/
+/*--------------------------------------------------TIPOGRAFÍAS*/
+/*--------------------------------------------------TIPOGRAFÍAS*/
+
 h1 {
 	font-family: Raleway;
 	font-weight: 300;
 	text-align: center;
 	font-size: 80px;
 	color: #fff;
-	text-shadow:2px 2px rgba(0,0,0,0.4);
+	text-shadow:2px 2px 3px rgba(0,0,0,0.9);
 	margin-top: 1px !important;
 	margin-bottom: 1px !important;
 }
@@ -56,9 +149,31 @@ h2 {
 	font-size: 60px;
 }
 
+h3 {
+	font-family: Arvo;
+	font-weight: 700;
+	letter-spacing: 0.1em !important;
+	font-size: 22px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+}
+
+p {
+	font-family: Arvo;
+	font-size: 20px;
+	font-variant: 400;
+}
+
+a{
+	text-decoration: none;
+}
+
+li {
+	list-style: none outside none;
+}
+
 header h2 {
 	color:#fff;
-	text-shadow:2px 2px rgba(0,0,0,0.4);
+	text-shadow:2px 2px 3px rgba(0,0,0,0.9);
 	padding-top: 100px;
 }
 
@@ -67,7 +182,7 @@ header p {
 	font-weight: 400;
 	font-size: 22px;
 	text-align: center;
-	text-shadow: 1px 2px rgba(0,0,0,0.4);
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
 	color: #fff;
 	line-height: 150%;
 	margin-top: 80px;
@@ -78,45 +193,93 @@ header p span {
 	font-weight: 700;
 }
 
-h3 {
-	font-family: Arvo;
-	font-weight: 700;
-	letter-spacing: 160%;
-	font-size: 22px;
-	text-shadow:1px 1px rgba(0,0,0,0.4);
-}
-
-li {
-	list-style: none outside none;
-}
-
 nav li a {
 	text-decoration: none !important;
 	font-family: Raleway;
 	font-size: 20px;
 	font-weight: 400 !important;
-	color: #fff;
+	color: #fff !important;
+	margin-top: 40px;
 }
 
 nav li a:hover {
-	font-weight: 700 !important;
-	color: #fff !important;
+	color: #B20000 !important;
 	font-size: 20px;
+	border-bottom: 5px white !important;
 }
 
-p {
-
+nav li a:focus {
+	outline: thin dotted;
 }
 
-a{
-	text-decoration: none;
+.historia h3 {
+	color: 	#fff !important;
 }
 
-span {
-
+.historia p,a {
+	color: #000 !important;
+	text-decoration: none !important;
 }
 
-blockquote{
-
+.conducta a, p {
+	color: #fff !important;
 }
 
+.conducta p {
+	font-family: Raleway;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.iconp {
+	padding-top: 70px;
+	font-size: 18px;
+}
+
+.titulosh2c a{
+	color: #fff !important;
+}
+
+.conflicto h3 {
+	color:#fff !important;
+}
+
+.conflicto p {
+	color:#000 !important;
+}
+
+.citas {
+	font-weight: 400italic !important;
+	font-style: italic;
+	font-family: Arvo;
+	font-size: 19px;
+}
+
+.notas {
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: Raleway;
+	font-weight: 400;
+}
+
+.personas {
+	padding-top: 50px;
+}
+
+.opinion h2 a {
+	color: #fff !important;
+}
+
+.opinion p {
+	text-align: center;
+}
+
+.opinion p a {
+	color: #B20000 !important;
+}
+
+.opinion p a:hover{
+	color: #B20000 !important;
+	outline: thin dotted;
+}
