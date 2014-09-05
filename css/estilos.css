@@ -101,6 +101,7 @@ img {
 
 .conflicto {
 	background-color: #71897D;
+	margin: 10px;
 }
 
 .favor {
@@ -122,6 +123,11 @@ img {
 .opinion {
 	padding-top: 70px;
 	padding-bottom: 90px;
+}
+
+.comillas {
+	width: 78%;
+	float: right;
 }
 
 /*--------------------------------------------------TIPOGRAFÍAS*/
